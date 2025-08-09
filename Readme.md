@@ -14,8 +14,6 @@ inline double sigmoid(double x) { return 1.0 / (1.0 + exp(-x)); }
 inline double dsigmoid(double y) { return y * (1 - y); }
 ```
 
-````
-
 - **`sigmoid`**: Squashes input values to the range (0, 1).
 - **`dsigmoid`**: Derivative of sigmoid, used for backpropagation weight updates.
 
@@ -94,9 +92,4 @@ g++ -O2 -o minimal_cnn minimal_cnn.cpp -std=c++11
 - Train on real datasets like MNIST.
 - Use batch training and better optimizers like Adam.
 
-
 Made by Pujan — Happy coding! 🚀
-
-
-
-````
